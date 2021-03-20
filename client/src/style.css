@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e9ecef;
+    padding-top: 60px;
+}
+
+/* Navbar.js */
+.navbar {
+    display: flex;
+    letter-spacing: -0.05em;
+    font-size: 24px;
+ }
+.navbar__home {
+    left: 1321px;
+    top: 50px;
+}
