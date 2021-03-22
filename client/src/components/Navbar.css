@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none; 
+    color: #828282;
+    font-size: 20px;
+}
+button {
+    border: 0;
+    color: #828282;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+.navbar ul{
+    display: none;
+}
+.navbar li:hover>ul{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}

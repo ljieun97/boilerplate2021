@@ -3,17 +3,18 @@ import {
     Link
   } from "react-router-dom";
 
-import "./Navigation.css"
+import "./Navbar.css"
 
-function Navigation() {
+function Navbar() {
     return (
-        <div class="navbar">
-            <ul>
+        <div>
+            <ul class="navbar">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/menu1">menu1</Link></li>
                 <li><Link to="/menu2">menu2</Link></li>
-                <li><Link to="/profile">Profile</Link>
+                <li><button>more</button>
                     <ul>
+                        <li><Link to="/profile">Profile</Link></li>
                         <li><button>logout</button></li>
                     </ul>
                 </li>
@@ -22,4 +23,4 @@ function Navigation() {
     );
 }
 
-export default Navigation;
+export default Navbar;

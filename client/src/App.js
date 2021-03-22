@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Navigation from './components/Navigation';
+import Navbar from './components/Navbar';
 import Home from './routes/Home';
 import Menu1 from './routes/Menu1';
 import Menu2 from './routes/Menu2';
@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Navigation />
+        <Navbar />
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/menu1" component={Menu1} />
