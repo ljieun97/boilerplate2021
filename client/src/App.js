@@ -6,10 +6,8 @@ import {
 } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './routes/Home';
-import Menu1 from './routes/Menu1';
-import Menu2 from './routes/Menu2';
-import Profile from './routes/Profile';
-
+import Login from './routes/Login';
+import Register from './routes/Register';
 import "./style.css"
 
 function App() {
@@ -19,9 +17,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact={true} component={Home} />
-          <Route path="/menu1" component={Menu1} />
-          <Route path="/menu2" component={Menu2} />
-          <Route path="/profile" component={Profile} />
+          <Route path="/sign_in" component={Login} />
+          <Route path="/sign_up" component={Register} />
         </Switch>
       </div>
     </Router>
