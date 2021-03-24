@@ -5,9 +5,9 @@ import {
   Route
 } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Home from './routes/Home';
-import Login from './routes/Login';
-import Register from './routes/Register';
+import LandingPage from './routes/LandingPage';
+import LoginPage from './routes/LoginPage';
+import RegisterPage from './routes/RegisterPage';
 import "./style.css"
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route path="/" exact={true} component={Home} />
-          <Route path="/sign_in" component={Login} />
-          <Route path="/sign_up" component={Register} />
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/sign_in" component={LoginPage} />
+          <Route exact path="/sign_up" component={RegisterPage} />
         </Switch>
       </div>
     </Router>
