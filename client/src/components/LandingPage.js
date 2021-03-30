@@ -1,7 +1,7 @@
 function LandingPage() {
     return (
       <div>
-        <h2>로그인하세요.</h2>
+        <h2>환영합니다.</h2>
       </div>
     );
   }

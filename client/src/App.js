@@ -5,10 +5,9 @@ import {
   Route
 } from "react-router-dom";
 import Navbar from './components/Navbar';
-import LandingPage from './routes/LandingPage';
-import LoginPage from './routes/LoginPage';
-import RegisterPage from './routes/RegisterPage';
-import "./style.css"
+import LandingPage from './components/LandingPage';
+import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
 
 function App() {
   return (
