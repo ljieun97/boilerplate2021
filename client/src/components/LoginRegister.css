@@ -1,17 +1,17 @@
 
-.loginpage {
+.loginregister {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
-.loginpage__input {
+.loginregister__input {
     width: 300px;
     height: 50px;
     padding-left: 10px;
     margin: 10px;
 }
-.loginpage__button {
+.loginregister__button {
     background-color: rgb(248, 47, 98);
     color: rgb(255, 255, 255);
     font-weight: 700;
