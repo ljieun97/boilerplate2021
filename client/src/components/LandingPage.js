@@ -1,9 +1,12 @@
+import React from 'react';
+import {withRouter} from 'react-router-dom'
+
 function LandingPage() {
   return (
     <div>
-      <h2>환영합니다.</h2>
+      <h2>로그인해주세요.</h2>
     </div>
   );
 }
 
-export default LandingPage;
+export default withRouter(LandingPage)

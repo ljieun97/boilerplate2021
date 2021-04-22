@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
 import {withRouter} from 'react-router-dom'
+import {Link} from "react-router-dom";
 import {useDispatch} from 'react-redux'
 import {loginUser} from '../_actions/user_action'
 import "./LoginRegister.css"
 
 function LoginPage(props) {
   const dispatch = useDispatch()
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState(); 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState(""); 
   
   const onEmailHandler = (event) => {
     setEmail(event.currentTarget.value);
@@ -28,7 +29,7 @@ function LoginPage(props) {
     dispatch(loginUser(body))
       .then(response => {
           if(response.payload.loginSuccess) {
-              props.history.push('/')
+              props.history.push('/home')
           } else {
               alert('Error')
           }
@@ -37,10 +38,11 @@ function LoginPage(props) {
 
   return (
       <div className="loginregister">
-        <form>
-            <div><input name="email" type="email" placeholder="이메일" value={email} onChange={onEmailHandler} className="loginregister__input"/></div>
-            <div><input name="password" type="password" placeholder="비밀번호" value={password} onChange={onPasswordHandler} className="loginregister__input"/></div>
-            <div><button type="submit" onSubmit={onSubmit} className="loginregister__button">로그인</button></div>
+        <form onSubmit={onSubmit}>
+            <div><input type="email" placeholder="이메일" value={email} onChange={onEmailHandler} className="loginregister__input"/></div>
+            <div><input type="password" placeholder="비밀번호" value={password} onChange={onPasswordHandler} className="loginregister__input"/></div>
+            <div><button type="submit" className="loginregister__button">로그인</button></div>
+            <div><Link to="/sign_up"><button className="register__button">회원가입</button></Link></div>
         </form>
       </div>
     );
