@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom'
 function LandingPage() {
   return (
     <div>
-      <h2>로그인해주세요.</h2>
+      <h2>로그인해주세요.dd</h2>
     </div>
   );
 }

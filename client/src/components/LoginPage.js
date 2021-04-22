@@ -42,7 +42,7 @@ function LoginPage(props) {
             <div><input type="email" placeholder="이메일" value={email} onChange={onEmailHandler} className="loginregister__input"/></div>
             <div><input type="password" placeholder="비밀번호" value={password} onChange={onPasswordHandler} className="loginregister__input"/></div>
             <div><button type="submit" className="loginregister__button">로그인</button></div>
-            <div><Link to="/sign_up"><button className="register__button">회원가입</button></Link></div>
+            <div><Link to="/sign_up"><button className="register__button">계정이 없으신가요?</button></Link></div>
         </form>
       </div>
     );
